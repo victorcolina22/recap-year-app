@@ -1,0 +1,58 @@
+---
+interface Props {
+  uniqueId: string;
+}
+const { uniqueId } = Astro.props;
+
+const BLOCKS = [
+  {
+    id: "1",
+    color: "bg-[#BFD5BA]",
+  },
+  {
+    id: "2",
+    color: "bg-[#F4CE90]",
+  },
+  {
+    id: "3",
+    color: "bg-[#D0B4D3]",
+  },
+  {
+    id: "4",
+    color: "bg-[#8D0118]",
+  },
+  {
+    id: "5",
+    color: "bg-[#BEE7F9]",
+  },
+  {
+    id: "6",
+    color: "bg-[#0F141A]",
+  },
+  {
+    id: "7",
+    color: "bg-[#F9B8D4]",
+  },
+  {
+    id: "8",
+    color: "bg-[#D5D1C9]",
+  },
+  {
+    id: "9",
+    color: "bg-[#D2B497]",
+  },
+  {
+    id: "10",
+    color: "bg-[#253450]",
+  },
+];
+---
+
+<section class="w-full inline-flex flex-nowrap overflow-hidden">
+  <ul
+    class="flex items-center justify-center animate-infinite-scroll"
+    data-unique-id={uniqueId}
+  >
+    {BLOCKS.map(({ color }) => <li class={`${color} h-[26px] w-[84px]`} />)}
+  </ul>
+</section>

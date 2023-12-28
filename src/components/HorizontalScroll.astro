@@ -1,0 +1,21 @@
+---
+import ItemsScrolling from "../components/ItemsScrolling.astro";
+---
+
+<section class="flex flex-col justify-between items-center h-screen">
+  <ItemsScrolling uniqueId="instance1" />
+  <slot />
+  <ItemsScrolling uniqueId="instance2" />
+</section>
+
+<script>
+  // Agregar nuevos bloques a la primera instancia
+  let ul1 = document.querySelector('[data-unique-id="instance1"]');
+  ul1.insertAdjacentHTML("afterend", ul1.outerHTML);
+  ul1.nextElementSibling.setAttribute("aria-hidden", "true");
+
+  // Agregar nuevos bloques a la segunda instancia
+  let ul2 = document.querySelector('[data-unique-id="instance2"]');
+  ul2.insertAdjacentHTML("afterend", ul2.outerHTML);
+  ul2.nextElementSibling.setAttribute("aria-hidden", "true");
+</script>

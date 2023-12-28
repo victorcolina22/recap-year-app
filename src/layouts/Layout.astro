@@ -1,0 +1,44 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @font-face {
+    font-family: Sardonyx;
+    src: url(fonts/Sardonyx.ttf) format(TrueType);
+  }
+  @font-face {
+    font-family: Sansation;
+    src: url(fonts/Santation_Light.ttf) format(TrueType);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Sardonyx;
+    color: #1a2f45;
+  }
+
+  h1 {
+    font-weight: 400;
+    line-height: 6rem;
+  }
+</style>

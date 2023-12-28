@@ -1,0 +1,20 @@
+{
+  "name": "recap-year-app",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.4",
+    "astro": "^4.0.7",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
+}
