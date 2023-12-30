@@ -1,0 +1,66 @@
+---
+import ColorBar from "../../components/ColorBar.astro";
+import Container from "../../components/Container.astro";
+import FirstSparkle from "../../components/icons/FirstSparkle.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import SecondSparkle from "../../components/icons/SecondSparkle.astro";
+import ThirdSparkle from "../../components/icons/ThirdSparkle.astro";
+
+const BG_YELLOW = "bg-[#F4CE90]";
+---
+
+<Layout title="February Photos">
+  <NavigationClick previous="/february" next="/march" />
+  <Container>
+    <Header title="FEBRERO" color={BG_YELLOW} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[220px_180px_100px] justify-items-center -mt-5"
+    >
+      <img
+        class="justify-self-end -mr-5 object-cover w-full animate-fadeLeft"
+        src="images/february/Group 13.png"
+        alt="group 13"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      />
+      <div class="justify-self-start -ml-5 w-[90%] relative">
+        <img
+          class="object-cover w-full animate-fadeRight"
+          src="images/february/Group 15.png"
+          alt="group 15"
+          style="animation-delay: 1s; animation-fill-mode: both;"
+        />
+        <ColorBar
+          class="w-auto h-auto animate-fadeDown absolute text-center py-2 px-5 -mt-5 ml-2 z-20"
+          color={BG_YELLOW}
+          style="animation-delay: 1.5s; animation-fill-mode: both;"
+        >
+          <p class="font-light text-xl">Lights and friends</p>
+        </ColorBar>
+      </div>
+      <img
+        class="justify-self-end -mr-5 object-cover w-[80%] z-10 animate-fadeLeft"
+        src="images/february/Group 16.png"
+        alt="group 16"
+        style="animation-delay: 2s; animation-fill-mode: both;"
+      />
+
+      <div class="justify-self-start grid grid-cols-1 grid-rows-1 ml-5">
+        <FirstSparkle
+          class="row-start-1 animate-fadeLeft"
+          style="animation-delay: 2.5s; animation-fill-mode: both;"
+        />
+        <ThirdSparkle
+          class="row-start-1 animate-fadeUp mt-8 -ml-3"
+          style="animation-delay: 3s; animation-fill-mode: both;"
+        />
+        <SecondSparkle
+          class="row-start-1 animate-fadeRight mt-5 ml-1"
+          style="animation-delay: 2.8s; animation-fill-mode: both;"
+        />
+      </div>
+    </section>
+  </Container>
+</Layout>

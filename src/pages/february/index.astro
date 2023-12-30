@@ -1,0 +1,34 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import Container from "../../components/Container.astro";
+---
+
+<Layout title="February">
+  <NavigationClick next="/february-photos" previous="/january-photos" />
+  <Container>
+    <div
+      class="grid grid-cols-1 grid-rows-1 items-end absolute left-0 right-0 bottom-0"
+    >
+      <div class="row-start-1 col-start-1 self-start justify-self-center mt-5">
+        <h2 class="text-[64px] animate-fadeDown">Forever & Always</h2>
+        <p class="text-xl -mt-7 animate-fadeUp">since 2019</p>
+      </div>
+      <img
+        class="row-start-1 col-start-1 justify-self-center ml-4"
+        src="images/february/Rectangle 32.png"
+        alt="rectangle 32"
+      />
+      <img
+        class="row-start-1 col-start-1 mix-blend-multiply justify-self-center -ml-12"
+        src="images/february/Rectangle 33.png"
+        alt="rectangle 33"
+      />
+      <img
+        class="row-start-1 col-start-1 justify-self-center -ml-5"
+        src="images/february/image 5.png"
+        alt="image 5"
+      />
+    </div>
+  </Container>
+</Layout>

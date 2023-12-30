@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+---
+
+<Layout title="January">
+  <NavigationClick previous="/" next="/january-photos" />
+  <section class="flex flex-col justify-between items-center">
+    <div class="flex flex-col text-center mt-32 z-10 animate-fade">
+      <h2 class="text-[64px]">I'm Only Me</h2>
+      <h2 class="text-[64px] -mt-7">When I'm with You</h2>
+    </div>
+
+    <div class="absolute bottom-0 flex justify-center w-full xs:w-[auto]">
+      <img
+        class="object-cover w-full"
+        src="images/january/january-taylor.png"
+        alt="january-taylor"
+      />
+    </div>
+
+    <img
+      class="w-full object-cover absolute top-0 h-full mix-blend-multiply"
+      src="images/january/triangule.png"
+      alt="triangule"
+    />
+  </section>
+</Layout>

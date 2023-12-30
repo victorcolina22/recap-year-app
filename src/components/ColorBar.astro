@@ -1,0 +1,7 @@
+---
+const { class: classes, color, ...rest } = Astro.props;
+---
+
+<figure class=`w-[139px] h-[25px] ${color} ${classes}` {...rest}>
+  <slot />
+</figure>

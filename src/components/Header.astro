@@ -1,0 +1,10 @@
+---
+import ColorBar from "./ColorBar.astro";
+
+const { color, title } = Astro.props;
+---
+
+<header>
+  <h2 class="text-[64px] ml-3">{title}</h2>
+  <ColorBar class="-mt-12" color={color} />
+</header>
