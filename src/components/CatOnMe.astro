@@ -1,0 +1,53 @@
+---
+import Container from "../components/Container.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+
+const BG_COLOR = "bg-[#BEE7F9]";
+---
+
+<Layout title="November Photos">
+  <Container class="mt-[650px]">
+    <Header class="reveal-animation" title="CAT ON ME" color={BG_COLOR} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[150px_150px_90px_190px_140px_130px_1fr] justify-items-center"
+    >
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/cat-on-me/Group 68.png"
+        alt="group 68"
+      />
+      <img
+        class="-mr-12 reveal-animation"
+        src="images/cat-on-me/Group 69.png"
+        alt="group 69"
+      />
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/cat-on-me/Group 70.png"
+        alt="group 70"
+      />
+      <img
+        class="-mr-20 reveal-animation"
+        src="images/cat-on-me/Group 71.png"
+        alt="group 71"
+      />
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/cat-on-me/Group 72.png"
+        alt="group 72"
+      />
+      <img
+        class="-mr-32 reveal-animation"
+        src="images/cat-on-me/Group 73.png"
+        alt="group 73"
+      />
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/cat-on-me/Group 74.png"
+        alt="group 74"
+      />
+    </section>
+  </Container>
+</Layout>

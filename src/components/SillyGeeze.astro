@@ -1,0 +1,63 @@
+---
+import Container from "../components/Container.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+
+const BG_COLOR = "bg-[#8D0118]";
+---
+
+<Layout title="November Photos">
+  <Container class="mt-[900px]">
+    <Header
+      class="reveal-animation"
+      title="Silly Geeze"
+      titleColor="text-[#0F141A]"
+      color={BG_COLOR}
+    />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[150px_130px_120px_140px_160px_130px_100px_1fr] justify-items-center"
+    >
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/silly-geeze/Group 60.png"
+        alt="group 60"
+      />
+      <img
+        class="-mr-32 reveal-animation"
+        src="images/silly-geeze/Group 61.png"
+        alt="group 61"
+      />
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/silly-geeze/Group 62.png"
+        alt="group 62"
+      />
+      <img
+        class="-mr-32 reveal-animation"
+        src="images/silly-geeze/Group 63.png"
+        alt="group 63"
+      />
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/silly-geeze/Group 64.png"
+        alt="group 64"
+      />
+      <img
+        class="-mr-32 reveal-animation"
+        src="images/silly-geeze/Group 65.png"
+        alt="group 65"
+      />
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/silly-geeze/Group 66.png"
+        alt="group 66"
+      />
+      <img
+        class="-mr-24 reveal-animation"
+        src="images/silly-geeze/Group 67.png"
+        alt="group 67"
+      />
+    </section>
+  </Container>
+</Layout>

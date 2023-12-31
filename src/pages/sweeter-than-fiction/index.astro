@@ -1,0 +1,47 @@
+---
+import Brie from "../../components/Brie.astro";
+import CatOnMe from "../../components/CatOnMe.astro";
+import DownArrow from "../../components/icons/DownArrow.astro";
+import Friends from "../../components/Friends.astro";
+import ItemsScrolling from "../../components/ItemsScrolling.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import SillyGeeze from "../../components/SillyGeeze.astro";
+import RightArrow from "../../components/icons/RightArrow.astro";
+---
+
+<Layout title="Sweeter Than Fiction">
+  <NavigationClick previous="/december-photos" next="" />
+  <ItemsScrolling uniqueId="instance3" />
+  <div class="text-center h-screen flex flex-col justify-center items-center">
+    <h2 class="text-[64px]">Sweeter</h2>
+    <h2 class="text-[64px] -mt-5">Than Fictions</h2>
+    <h2 class="text-[36px] -mt-5">(Extras)</h2>
+    <DownArrow />
+  </div>
+
+  <Friends />
+  <SillyGeeze />
+  <CatOnMe />
+  <Brie />
+
+  <div class="mt-[900px] text-center pb-10">
+    <h2 class="text-[64px] -mb-2">One last thing</h2>
+    <div class="flex items-center gap-1 text-center justify-center">
+      <a href="/sam-mari" class="underline text-xl">tap</a>
+      <RightArrow />
+    </div>
+  </div>
+</Layout>
+
+<script>
+  // Agregar nuevos bloques a la primera instancia
+  let ul1 = document.querySelector('[data-unique-id="instance3"]');
+  ul1?.insertAdjacentHTML("afterend", ul1.outerHTML);
+  ul1?.nextElementSibling?.setAttribute("aria-hidden", "true");
+
+  // Agregar nuevos bloques a la segunda instancia
+  let ul2 = document.querySelector('[data-unique-id="instance4"]');
+  ul2?.insertAdjacentHTML("afterend", ul2.outerHTML);
+  ul2?.nextElementSibling?.setAttribute("aria-hidden", "true");
+</script>

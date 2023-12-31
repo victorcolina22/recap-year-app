@@ -1,0 +1,58 @@
+---
+import Container from "../components/Container.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+
+const BG_COLOR = "bg-[#55575B]";
+---
+
+<Layout title="November Photos">
+  <Container class="mt-[600px]">
+    <Header class="reveal-animation" title="BRIE PLATTER" color={BG_COLOR} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[150px_120px_130px_170px_180px_180px_130px_1fr] justify-items-center"
+    >
+      <img
+        class="-ml-24 reveal-animation"
+        src="images/brie/Group 75.png"
+        alt="group 75"
+      />
+      <img
+        class="-mr-24 reveal-animation"
+        src="images/brie/Group 76.png"
+        alt="group 76"
+      />
+      <img
+        class="-ml-24 reveal-animation"
+        src="images/brie/Group 78.png"
+        alt="group 78"
+      />
+      <img
+        class="-mr-24 reveal-animation"
+        src="images/brie/Group 79.png"
+        alt="group 79"
+      />
+      <img
+        class="-ml-24 reveal-animation"
+        src="images/brie/Group 77.png"
+        alt="group 77"
+      />
+      <img
+        class="-mr-24 reveal-animation"
+        src="images/brie/Group 80.png"
+        alt="group 80"
+      />
+      <img
+        class="-ml-24 reveal-animation"
+        src="images/brie/Group 81.png"
+        alt="group 81"
+      />
+      <img
+        class="-mr-24 reveal-animation"
+        src="images/brie/Group 82.png"
+        alt="group 82"
+      />
+    </section>
+  </Container>
+</Layout>

@@ -1,0 +1,68 @@
+---
+import Container from "../components/Container.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+
+const BG_COLOR = "bg-[#D0B4D3]";
+---
+
+<Layout title="November Photos">
+  <Container>
+    <Header class="reveal-animation" title="Friends" color={BG_COLOR} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[210px_130px_120px_130px_140px_120px_80px_240px_130px_1fr] justify-items-center"
+    >
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/friends/Group 49.png"
+        alt="group 49"
+      />
+      <img
+        class="-mr-28 reveal-animation"
+        src="images/friends/Group 48.png"
+        alt="group 48"
+      />
+      <img
+        class="-ml-32 reveal-animation z-10"
+        src="images/friends/Group 6.png"
+        alt="group 6"
+      />
+      <img
+        class="-mr-32 reveal-animation"
+        src="images/friends/Group 52.png"
+        alt="group 52"
+      />
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/friends/Group 53.png"
+        alt="group 53"
+      />
+      <img
+        class="-mr-32 reveal-animation"
+        src="images/friends/Group 54.png"
+        alt="group 54"
+      />
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/friends/Group 56.png"
+        alt="group 56"
+      />
+      <img
+        class="-mr-24 reveal-animation"
+        src="images/friends/Group 57.png"
+        alt="group 57"
+      />
+      <img
+        class="-ml-32 reveal-animation"
+        src="images/friends/Group 58.png"
+        alt="group 58"
+      />
+      <img
+        class="-mr-32 reveal-animation"
+        src="images/friends/Group 59.png"
+        alt="group 59"
+      />
+    </section>
+  </Container>
+</Layout>

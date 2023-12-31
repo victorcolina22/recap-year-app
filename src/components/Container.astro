@@ -1,3 +1,7 @@
-<section class="flex flex-col gap-10 h-screen px-10 pt-16">
+---
+const { class: classes } = Astro.props;
+---
+
+<section class=`flex flex-col gap-10 h-screen px-10 pt-16 ${classes}`>
   <slot />
 </section>
