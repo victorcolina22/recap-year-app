@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import Container from "../../components/Container.astro";
+---
+
+<Layout title="July">
+  <NavigationClick previous="/june-photos" next="/july-photos" />
+  <Container>
+    <section class="grid place-items-center items-end">
+      <p
+        class="text-[20px] text-[#1A2F45] mt-28 animate-fadeRight"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      >
+        You're my
+      </p>
+      <h2
+        class="text-[64px] -mt-4 animate-fadeLeft"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      >
+        Lover
+      </h2>
+
+      <img
+        class="absolute bottom-0 left-0 right-0 -z-10"
+        src="images/july/Group 89.png"
+        alt="group 89"
+      />
+    </section>
+  </Container>
+</Layout>

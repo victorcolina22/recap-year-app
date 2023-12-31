@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import Container from "../../components/Container.astro";
+---
+
+<Layout title="June">
+  <NavigationClick previous="/may-photos" next="/june-photos" />
+  <Container>
+    <section class="grid grid-cols-1 grid-rows-1 place-items-center items-end">
+      <p
+        class="text-[20px] text-[#1A2F45] mt-10 animate-fadeDown"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      >
+        we are
+      </p>
+      <h2
+        class="text-[64px] -mt-4 animate-fadeUp"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      >
+        End Game
+      </h2>
+
+      <img
+        class="absolute bottom-0 right-0"
+        src="images/june/Group 88.png"
+        alt="group 88"
+      />
+    </section>
+  </Container>
+</Layout>

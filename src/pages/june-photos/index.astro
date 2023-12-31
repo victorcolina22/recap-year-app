@@ -1,0 +1,50 @@
+---
+import ColorBar from "../../components/ColorBar.astro";
+import Container from "../../components/Container.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+
+const BG_COLOR = "bg-[#55575B]";
+---
+
+<Layout title="June Photos">
+  <NavigationClick previous="/june" next="/july" />
+  <Container>
+    <Header title="JUNIO" titleColor="text-[#0F141A]" color={BG_COLOR} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[140px_220px_1fr] justify-items-center"
+    >
+      <img
+        class="-ml-20 animate-fadeRight"
+        src="images/june/Group 22.png"
+        alt="group 22"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      />
+      <img
+        class="-mr-24 animate-fadeLeft"
+        src="images/june/Group 23.png"
+        alt="group 23"
+        style="animation-delay: 1s; animation-fill-mode: both;"
+      />
+      <div class="-ml-24 relative">
+        <img
+          class="animate-fadeRight"
+          src="images/june/Group 24.png"
+          alt="group 24"
+          style="animation-delay: 1.5s; animation-fill-mode: both;"
+        />
+        <ColorBar
+          class="w-[180px] h-auto text-center py-2 absolute left-16 -mt-3 animate-fadeUp"
+          color="bg-[#0F141A]"
+          style="animation-delay: 1.8s; animation-fill-mode: both;"
+        >
+          <p class="font-light text-xl text-[#EEEEEE]">
+            Chill vibes, chill month
+          </p>
+        </ColorBar>
+      </div>
+    </section>
+  </Container>
+</Layout>
