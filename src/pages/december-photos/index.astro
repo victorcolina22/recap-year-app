@@ -1,0 +1,55 @@
+---
+import ColorBar from "../../components/ColorBar.astro";
+import Container from "../../components/Container.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import InLoveFace from "../../components/icons/InLoveFace.astro";
+
+const BG_COLOR = "bg-[#8D0118]";
+---
+
+<Layout title="November Photos">
+  <NavigationClick previous="/december" next="/sweeter-than-fiction" />
+  <Container>
+    <Header title="DICIEMBRE" titleColor="text-[#0F141A]" color={BG_COLOR} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[120px_210px_1fr] justify-items-center"
+    >
+      <div class="-ml-28 relative">
+        <InLoveFace
+          class="absolute top-10 -right-14 animate-fade"
+          style="animation-delay: 2.2s; animation-fill-mode: both;"
+        />
+        <img
+          class="animate-fadeRight"
+          src="images/december/Group 18.png"
+          alt="group 18"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        />
+      </div>
+      <div class="-mr-32 relative">
+        <img
+          class="animate-fadeLeft"
+          src="images/december/Group 19.png"
+          alt="group 19"
+          style="animation-delay: 1s; animation-fill-mode: both;"
+        />
+        <ColorBar
+          class="w-[160px] h-auto text-center py-2 absolute -bottom-28 -right-1 z-20 animate-fade"
+          color={BG_COLOR}
+          style="animation-delay: 2s; animation-fill-mode: both;"
+        >
+          <p class="font-light text-xl text-[#EEEEEE]">B-day and weddings!</p>
+        </ColorBar>
+      </div>
+      <img
+        class="-ml-28 z-10 animate-fadeRight"
+        src="images/december/Group 20.png"
+        alt="group 20"
+        style="animation-delay: 1.5s; animation-fill-mode: both;"
+      />
+    </section>
+  </Container>
+</Layout>

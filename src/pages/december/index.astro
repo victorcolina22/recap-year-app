@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import Container from "../../components/Container.astro";
+---
+
+<Layout title="December">
+  <NavigationClick previous="/november-photos" next="/december-photos" />
+  <Container>
+    <section class="grid place-items-center items-end">
+      <div class="mt-10">
+        <h2
+          class="text-[64px] leading-[60px] text-center animate-fade"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        >
+          I knew you were trouble
+        </h2>
+        <p
+          class="text-xl text-center animate-fade -mt-2"
+          style="animation-delay: 1s; animation-fill-mode: both;"
+        >
+          (but good fun trouble)
+        </p>
+      </div>
+
+      <img
+        class="absolute bottom-0 left-0 right-0 -z-10"
+        src="images/december/Group 101.png"
+        alt="group 101"
+      />
+    </section>
+  </Container>
+</Layout>
