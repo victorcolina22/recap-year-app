@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import Container from "../../components/Container.astro";
+---
+
+<Layout title="April">
+  <NavigationClick previous="/march-photos" next="/april-photos" />
+  <Container>
+    <section
+      class="grid grid-cols-1 grid-rows-1 place-items-center items-end absolute left-0 right-0 bottom-0"
+    >
+      <div class="col-start-1 row-start-1 self-start text-[64px] -mt-24">
+        <div class="flex gap-3">
+          <h2
+            class="animate-fadeRight"
+            style="animation-delay: 0.5s; animation-fill-mode: both;"
+          >
+            Stay,
+          </h2>
+          <h2
+            class="animate-fadeRight"
+            style="animation-delay: 1s; animation-fill-mode: both;"
+          >
+            stay,
+          </h2>
+          <h2
+            class="animate-fadeRight"
+            style="animation-delay: 1.5s; animation-fill-mode: both;"
+          >
+            stay...
+          </h2>
+        </div>
+      </div>
+
+      <img class="-mb-2" src="images/april/Group 85.png" alt="group 85" />
+    </section>
+  </Container>
+</Layout>

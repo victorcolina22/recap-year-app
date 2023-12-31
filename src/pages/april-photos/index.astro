@@ -1,0 +1,59 @@
+---
+import ColorBar from "../../components/ColorBar.astro";
+import Container from "../../components/Container.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+
+const BG_RED = "bg-[#8D0118]";
+---
+
+<Layout title="April Photos">
+  <NavigationClick previous="/april" next="/may" />
+  <Container>
+    <Header title="ABRIL" titleColor="text-[#0F141A]" color={BG_RED} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[180px_170px_1fr] justify-items-center"
+    >
+      <div class="animate-fade -mr-28 relative">
+        <div
+          class="flex flex-col absolute -ml-16 mt-20 animate-fade"
+          style="animation-delay: 2s; animation-fill-mode: both;"
+        >
+          <img src="images/april/Arrow.png" alt="arrow" />
+          <p class="text-[10px] w-[80px]">We had to be apart again, but...</p>
+        </div>
+        <img
+          class="animate-fade"
+          src="images/april/Group 21.png"
+          alt="group 21"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        />
+      </div>
+      <img
+        class="animate-fadeLeft -ml-32"
+        src="images/april/Group 19.png"
+        alt="group 19"
+        style="animation-delay: 1s; animation-fill-mode: both;"
+      />
+      <div class="relative">
+        <img
+          class="animate-fadeUp ml-10"
+          src="images/april/Group 20.png"
+          alt="group 20"
+          style="animation-delay: 1.5s; animation-fill-mode: both;"
+        />
+        <ColorBar
+          class="w-[170px] h-auto text-center pb-1 animate-fadeRight ml-28 -mt-[265px]"
+          color={BG_RED}
+          style="animation-delay: 1.5s; animation-fill-mode: both;"
+        >
+          <p class="font-light text-xl mt-1 leading-5 text-[#EEEEEE]">
+            always kept each other present
+          </p>
+        </ColorBar>
+      </div>
+    </section>
+  </Container>
+</Layout>

@@ -1,0 +1,54 @@
+---
+import ColorBar from "../../components/ColorBar.astro";
+import Container from "../../components/Container.astro";
+import Header from "../../components/Header.astro";
+import Heart from "../../components/icons/Heart.astro";
+import InLoveFace from "../../components/icons/InLoveFace.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+
+const BG_PURPLE = "bg-[#D0B4D3]";
+---
+
+<Layout title="March Photos">
+  <NavigationClick previous="/march" next="/april" />
+  <Container>
+    <Header title="MARZO" color={BG_PURPLE} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[220px_1fr] justify-items-center mt-5"
+    >
+      <div class="-ml-32 relative">
+        <img
+          class="animate-fadeRight"
+          src="images/march/Group 18.png"
+          alt="group 18"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        />
+        <InLoveFace
+          class="absolute top-0 right-0 mt-16 -mr-14 animate-fadeDown"
+          style="animation-delay: 1s; animation-fill-mode: both;"
+        />
+      </div>
+      <div class="-mr-28 relative">
+        <Heart
+          class="absolute top-0 left-0 mt-24 -ml-[88px] animate-fadeUp"
+          style="animation-delay: 2s; animation-fill-mode: both;"
+        />
+        <img
+          class="animate-fadeLeft"
+          src="images/march/Group 19.png"
+          alt="group 19"
+          style="animation-delay: 1.5s; animation-fill-mode: both;"
+        />
+        <ColorBar
+          class="w-[170px] h-[64px] absolute bottom-0 -ml-8 -mb-5 text-center animate-fadeUp"
+          color={BG_PURPLE}
+          style="animation-delay: 2.5s; animation-fill-mode: both;"
+        >
+          <p class="font-light text-xl mt-1">We shared a lot with friends</p>
+        </ColorBar>
+      </div>
+    </section>
+  </Container>
+</Layout>
