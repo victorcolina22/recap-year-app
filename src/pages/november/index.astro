@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import Container from "../../components/Container.astro";
+---
+
+<Layout title="November">
+  <NavigationClick previous="/october-photos" next="/november-photos" />
+  <Container>
+    <section class="grid place-items-center items-end">
+      <div class="mt-40">
+        <p
+          class="text-xl ml-5 animate-fadeRight"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        >
+          Our love
+        </p>
+        <h2
+          class="text-[64px] -mt-7 -mb-7 animate-fade"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        >
+          Love story
+        </h2>
+        <p
+          class="text-xl animate-fadeLeft"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        >
+          It's the greatest
+        </p>
+      </div>
+
+      <img
+        class="absolute bottom-0 left-0 right-0 -z-10"
+        src="images/november/Group 100.png"
+        alt="group 100"
+      />
+    </section>
+  </Container>
+</Layout>

@@ -1,0 +1,34 @@
+---
+import ColorBar from "../../components/ColorBar.astro";
+import Container from "../../components/Container.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+
+const BG_BLUE = "bg-[#BEE7F9]";
+---
+
+<Layout title="May Photos">
+  <NavigationClick previous="/may" next="/june" />
+  <Container>
+    <Header title="MAYO" color={BG_BLUE} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[390px_1fr] justify-items-center mt-12"
+    >
+      <img
+        class="animate-fade"
+        src="/images/may/Group 87.png"
+        alt="group 87"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      />
+      <ColorBar
+        class="w-[180px] h-auto text-center py-2 z-10 animate-fadeUp"
+        color={BG_BLUE}
+        style="animation-delay: 1s; animation-fill-mode: both;"
+      >
+        <p class="font-light text-xl text-[#1A2F45]">Zelda, enough said.</p>
+      </ColorBar>
+    </section>
+  </Container>
+</Layout>

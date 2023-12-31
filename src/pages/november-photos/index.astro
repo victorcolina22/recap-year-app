@@ -1,0 +1,75 @@
+---
+import ColorBar from "../../components/ColorBar.astro";
+import Container from "../../components/Container.astro";
+import FirstHeart from "../../components/icons/FirstHeart.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import SecondHeart from "../../components/icons/SecondHeart.astro";
+import ThirdHeart from "../../components/icons/ThirdHeart.astro";
+
+const BG_COLOR = "bg-[#F4CE90]";
+---
+
+<Layout title="November Photos">
+  <NavigationClick previous="/november" next="/december" />
+  <Container>
+    <Header title="NOVIEMBRE" titleColor="text-[#0F141A]" color={BG_COLOR} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[120px_180px_100px_1fr] justify-items-center"
+    >
+      <div class="-ml-32 relative">
+        <div
+          class="grid grid-cols-[30px_1fr] grid-rows-[30px_1fr] absolute top-14 -right-16"
+        >
+          <FirstHeart
+            class="animate-fadeDown"
+            style="animation-delay: 2.5s; animation-fill-mode: both;"
+          />
+          <SecondHeart
+            class="mt-2 animate-fadeRight"
+            style="animation-delay: 2.8s; animation-fill-mode: both;"
+          />
+          <ThirdHeart
+            class="animate-fadeUp"
+            style="animation-delay: 3s; animation-fill-mode: both;"
+          />
+        </div>
+        <img
+          class="animate-fadeRight"
+          src="images/november/Group 13.png"
+          alt="group 13"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        />
+      </div>
+      <img
+        class="-mr-32 animate-fadeLeft"
+        src="images/november/Group 14.png"
+        alt="group 14"
+        style="animation-delay: 1s; animation-fill-mode: both;"
+      />
+      <img
+        class="-ml-32 animate-fadeRight"
+        src="images/november/Group 15.png"
+        alt="group 15"
+        style="animation-delay: 1.5s; animation-fill-mode: both;"
+      />
+      <div class="-mr-32 z-20 relative">
+        <ColorBar
+          class="w-[160px] h-auto text-center py-2 absolute -top-7 -right-1 z-20 animate-fade"
+          color={BG_COLOR}
+          style="animation-delay: 2.2s; animation-fill-mode: both;"
+        >
+          <p class="font-light text-xl text-[#1A2F45]">Palermo-swift trip</p>
+        </ColorBar>
+        <img
+          class="animate-fade"
+          src="images/november/Group 16.png"
+          alt="gorup 16"
+          style="animation-delay: 2s; animation-fill-mode: both;"
+        />
+      </div>
+    </section>
+  </Container>
+</Layout>

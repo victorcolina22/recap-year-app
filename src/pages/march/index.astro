@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import Container from "../../components/Container.astro";
+---
+
+<Layout title="March">
+  <NavigationClick previous="/february-photos" next="/march-photos" />
+  <Container>
+    <section
+      class="grid grid-cols-1 grid-rows-1 place-items-center items-end absolute left-0 right-0 bottom-0"
+    >
+      <div
+        class="row-start-1 col-start-1 self-start justify-self-center mt-44 z-10 text-center"
+      >
+        <h2 class="text-[64px] animate-fadeDown">Sparks Fly</h2>
+        <p class="text-xl -mt-8 ml-2 animate-fadeUp">between us</p>
+      </div>
+      <img
+        class="row-start-1 col-start-1"
+        src="images/march/Rectangle 31.png"
+        alt="rectangle 31"
+      />
+      <img
+        class="row-start-1 col-start-1"
+        src="images/march/image 5.png"
+        alt="image 5"
+      />
+      <img
+        class="row-start-1 col-start-1 mix-blend-screen self-start mt-20"
+        src="images/march/Rectangle 30.png"
+        alt="rectangle 30"
+      />
+    </section>
+  </Container>
+</Layout>
