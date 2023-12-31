@@ -13,3 +13,10 @@ import NavigationClick from "../../components/NavigationClick.astro";
       autoplay></video>
   </HorizontalScroll>
 </Layout>
+
+<script>
+  window.onload = () => {
+    const video = document.querySelector("video");
+    video?.play();
+  };
+</script>
