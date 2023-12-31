@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import Container from "../../components/Container.astro";
+---
+
+<Layout title="August">
+  <NavigationClick previous="/july-photos" next="/august-photos" />
+  <Container>
+    <section class="grid place-items-center items-end">
+      <h2
+        class="text-[64px] mt-24 animate-fadeLeft"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      >
+        This Is Me Trying
+      </h2>
+      <p
+        class="text-[20px] -mt-8 animate-fadeRight -ml-28"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      >
+        To do something romantic
+      </p>
+
+      <img
+        class="absolute bottom-0 left-0 right-0 -z-10"
+        src="images/august/Group 90.png"
+        alt="group 90"
+      />
+    </section>
+  </Container>
+</Layout>

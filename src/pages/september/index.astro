@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import Container from "../../components/Container.astro";
+---
+
+<Layout title="September">
+  <NavigationClick previous="/august-photos" next="/september-photos" />
+  <Container>
+    <section class="grid place-items-center items-end">
+      <div class="flex gap-2 mt-36">
+        <p
+          class="text-xl animate-fadeDown"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        >
+          For
+        </p>
+        <h2
+          class="text-[64px] animate-fadeRight"
+          style="animation-delay: 0.5s; animation-fill-mode: both;"
+        >
+          Evermore
+        </h2>
+      </div>
+
+      <img
+        class="absolute bottom-0 left-0 right-0 -z-10"
+        src="images/september/Group 94.png"
+        alt="group 94"
+      />
+    </section>
+  </Container>
+</Layout>

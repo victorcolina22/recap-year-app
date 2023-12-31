@@ -1,0 +1,57 @@
+---
+import ColorBar from "../../components/ColorBar.astro";
+import Container from "../../components/Container.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import CurvedArrow from "../../components/icons/CurvedArrow.astro";
+
+const BG_COLOR = "bg-[#D2B497]";
+---
+
+<Layout title="September Photos">
+  <NavigationClick previous="/september" next="/october" />
+  <Container>
+    <Header title="SEPTIEMBRE" color={BG_COLOR} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[170px_220px_1fr] justify-items-center"
+    >
+      <img
+        class="-mr-24 animate-fade"
+        src="images/september/Group 32.png"
+        alt="group 32"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      />
+      <div class="-ml-24 relative">
+        <ColorBar
+          class="w-[160px] h-auto text-center py-2 absolute right-10 -top-5 z-20 animate-fade"
+          color={BG_COLOR}
+          style="animation-delay: 2s; animation-fill-mode: both;"
+        >
+          <p class="font-light text-xl text-[#1A2F45]">
+            B-day, mangas and holidays
+          </p>
+        </ColorBar>
+        <img
+          class="animate-fade"
+          src="images/september/Group 95.png"
+          alt="group 95"
+          style="animation-delay: 1s; animation-fill-mode: both;"
+        />
+      </div>
+      <div class="-mr-32 relative">
+        <img
+          class="animate-fade z-20"
+          src="images/september/Group 34.png"
+          alt="group 34"
+          style="animation-delay: 1.5s; animation-fill-mode: both;"
+        />
+        <CurvedArrow
+          class="absolute bottom-0 -left-24 top-14 animate-fade"
+          style="animation-delay: 2.2s; animation-fill-mode: both;"
+        />
+      </div>
+    </section>
+  </Container>
+</Layout>

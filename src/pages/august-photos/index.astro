@@ -1,0 +1,83 @@
+---
+import ColorBar from "../../components/ColorBar.astro";
+import Container from "../../components/Container.astro";
+import FirstStart from "../../components/icons/FirstStart.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import Love from "../../components/icons/Love.astro";
+import NavigationClick from "../../components/NavigationClick.astro";
+import SecondStart from "../../components/icons/SecondStart.astro";
+import ThirdStart from "../../components/icons/ThirdStart.astro";
+
+const BG_COLOR = "bg-[#D5D1C9]";
+---
+
+<Layout title="August Photos">
+  <NavigationClick previous="/august" next="/september" />
+  <Container>
+    <Header title="AGOSTO" color={BG_COLOR} />
+
+    <section
+      class="grid grid-cols-1 grid-rows-[150px_160px_130px_100px] justify-items-center -mt-10"
+    >
+      <img
+        class="-ml-24 animate-fadeRight"
+        src="images/august/Group 47.png"
+        alt="group 47"
+        style="animation-delay: 0.5s; animation-fill-mode: both;"
+      />
+      <div class="-mr-32 relative">
+        <div
+          class="grid grid-cols-2 grid-rows-[32px_30px_1fr] absolute -top-12 right-14"
+        >
+          <FirstStart
+            class="col-start-1 animate-fadeDown"
+            style="animation-delay: 3s; animation-fill-mode: both;"
+          />
+          <SecondStart
+            class="col-start-2 mt-3 animate-fade"
+            style="animation-delay: 3.2s; animation-fill-mode: both;"
+          />
+          <ThirdStart
+            class="col-start-1 animate-fadeUp"
+            style="animation-delay: 3.5s; animation-fill-mode: both;"
+          />
+        </div>
+        <img
+          class="animate-fadeLeft"
+          src="images/august/Group 91.png"
+          alt="group 91"
+          style="animation-delay: 1s; animation-fill-mode: both;"
+        />
+      </div>
+      <div class="-ml-28">
+        <img
+          class="animate-fadeLeft"
+          src="images/august/Group 29.png"
+          alt="group 29"
+          style="animation-delay: 1.5s; animation-fill-mode: both;"
+        />
+        <ColorBar
+          class="w-[155px] h-auto text-center py-2 absolute -mt-2 -ml-2 z-20 animate-fadeUp"
+          color={BG_COLOR}
+          style="animation-delay: 2s; animation-fill-mode: both;"
+        >
+          <p class="font-light text-xl text-[#1A2F45]">Anniversary month!</p>
+        </ColorBar>
+      </div>
+
+      <div class="-mr-28 relative">
+        <img
+          class="animate-fadeRight"
+          src="images/august/Group 28.png"
+          alt="gorup 28"
+          style="animation-delay: 2.5s; animation-fill-mode: both;"
+        />
+        <Love
+          class="absolute -bottom-32 -left-32 animate-fade"
+          style="animation-delay: 2.8s; animation-fill-mode: both;"
+        />
+      </div>
+    </section>
+  </Container>
+</Layout>
